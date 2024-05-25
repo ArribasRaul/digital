@@ -1,0 +1,223 @@
+
+
+================================================================
+== Vivado HLS Report for 'cic'
+================================================================
+* Date:           Sat May 25 11:04:20 2024
+
+* Version:        2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)
+* Project:        hls_cic
+* Solution:       solution1
+* Product family: artix7
+* Target device:  xc7a200tfbg676-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     7.643|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |   68|   68|   68|   68|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |- L1      |   65|   65|         3|          1|          1|    64|    yes   |
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 3
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 6
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 3, States = { 2 3 4 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	5  / (exitcond1)
+	3  / (!exitcond1)
+3 --> 
+	4  / true
+4 --> 
+	2  / true
+5 --> 
+	6  / true
+6 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.35>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i46 0), !map !78"   --->   Operation 7 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %ENTRADA_V), !map !84"   --->   Operation 8 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([4 x i8]* @cic_str) nounwind"   --->   Operation 9 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [11 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [cic.cpp:17]   --->   Operation 10 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [11 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1)"   --->   Operation 11 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %ENTRADA_V, [5 x i8]* @p_str2, i32 1, i32 1, [5 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1)"   --->   Operation 12 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (1.35ns)   --->   "br label %0" [cic.cpp:23]   --->   Operation 13 'br' <Predicate = true> <Delay = 1.35>
+
+State 2 <SV = 1> <Delay = 2.03>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%agg_result_V = phi i46 [ undef, %codeRepl ], [ %p_Val2_8_4, %1 ]" [cic.cpp:33]   --->   Operation 14 'phi' 'agg_result_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%di = phi i7 [ 0, %codeRepl ], [ %di_1, %1 ]"   --->   Operation 15 'phi' 'di' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (1.23ns)   --->   "%exitcond1 = icmp eq i7 %di, -64" [cic.cpp:23]   --->   Operation 16 'icmp' 'exitcond1' <Predicate = true> <Delay = 1.23> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.23> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 64, i64 64, i64 64)"   --->   Operation 17 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (1.66ns)   --->   "%di_1 = add i7 %di, 1" [cic.cpp:23]   --->   Operation 18 'add' 'di_1' <Predicate = true> <Delay = 1.66> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "br i1 %exitcond1, label %.preheader.0, label %1" [cic.cpp:23]   --->   Operation 19 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [2/2] (0.00ns)   --->   "%ENTRADA_V_read = call i16 @_ssdm_op_Read.axis.volatile.i16P(i16* %ENTRADA_V)" [cic.cpp:29]   --->   Operation 20 'read' 'ENTRADA_V_read' <Predicate = (!exitcond1)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+
+State 3 <SV = 2> <Delay = 5.09>
+ST_3 : Operation 21 [1/1] (0.00ns)   --->   "%inte_V_0_load = load i46* @inte_V_0, align 16" [cic.cpp:29]   --->   Operation 21 'load' 'inte_V_0_load' <Predicate = (!exitcond1)> <Delay = 0.00>
+ST_3 : Operation 22 [1/2] (0.00ns)   --->   "%ENTRADA_V_read = call i16 @_ssdm_op_Read.axis.volatile.i16P(i16* %ENTRADA_V)" [cic.cpp:29]   --->   Operation 22 'read' 'ENTRADA_V_read' <Predicate = (!exitcond1)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%tmp_8 = sext i16 %ENTRADA_V_read to i46" [cic.cpp:29]   --->   Operation 23 'sext' 'tmp_8' <Predicate = (!exitcond1)> <Delay = 0.00>
+ST_3 : Operation 24 [1/1] (2.54ns)   --->   "%p_Val2_5 = add i46 %inte_V_0_load, %tmp_8" [cic.cpp:29]   --->   Operation 24 'add' 'p_Val2_5' <Predicate = (!exitcond1)> <Delay = 2.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 25 [1/1] (0.00ns)   --->   "store i46 %p_Val2_5, i46* @inte_V_0, align 16" [cic.cpp:30]   --->   Operation 25 'store' <Predicate = (!exitcond1)> <Delay = 0.00>
+ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%inte_V_1_load = load i46* @inte_V_1, align 8" [cic.cpp:33]   --->   Operation 26 'load' 'inte_V_1_load' <Predicate = (!exitcond1)> <Delay = 0.00>
+ST_3 : Operation 27 [1/1] (2.54ns)   --->   "%p_Val2_8_1 = add i46 %inte_V_1_load, %p_Val2_5" [cic.cpp:33]   --->   Operation 27 'add' 'p_Val2_8_1' <Predicate = (!exitcond1)> <Delay = 2.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 28 [1/1] (0.00ns)   --->   "store i46 %p_Val2_8_1, i46* @inte_V_1, align 8" [cic.cpp:34]   --->   Operation 28 'store' <Predicate = (!exitcond1)> <Delay = 0.00>
+
+State 4 <SV = 3> <Delay = 7.64>
+ST_4 : Operation 29 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([3 x i8]* @p_str4) nounwind" [cic.cpp:26]   --->   Operation 29 'specloopname' <Predicate = (!exitcond1)> <Delay = 0.00>
+ST_4 : Operation 30 [1/1] (0.00ns)   --->   "%tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([3 x i8]* @p_str4)" [cic.cpp:26]   --->   Operation 30 'specregionbegin' 'tmp' <Predicate = (!exitcond1)> <Delay = 0.00>
+ST_4 : Operation 31 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind" [cic.cpp:25]   --->   Operation 31 'specpipeline' <Predicate = (!exitcond1)> <Delay = 0.00>
+ST_4 : Operation 32 [1/1] (0.00ns)   --->   "%inte_V_2_load = load i46* @inte_V_2, align 16" [cic.cpp:33]   --->   Operation 32 'load' 'inte_V_2_load' <Predicate = (!exitcond1)> <Delay = 0.00>
+ST_4 : Operation 33 [1/1] (2.54ns)   --->   "%p_Val2_8_2 = add i46 %inte_V_2_load, %p_Val2_8_1" [cic.cpp:33]   --->   Operation 33 'add' 'p_Val2_8_2' <Predicate = (!exitcond1)> <Delay = 2.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 34 [1/1] (0.00ns)   --->   "store i46 %p_Val2_8_2, i46* @inte_V_2, align 16" [cic.cpp:34]   --->   Operation 34 'store' <Predicate = (!exitcond1)> <Delay = 0.00>
+ST_4 : Operation 35 [1/1] (0.00ns)   --->   "%inte_V_3_load = load i46* @inte_V_3, align 8" [cic.cpp:33]   --->   Operation 35 'load' 'inte_V_3_load' <Predicate = (!exitcond1)> <Delay = 0.00>
+ST_4 : Operation 36 [1/1] (2.54ns)   --->   "%p_Val2_8_3 = add i46 %inte_V_3_load, %p_Val2_8_2" [cic.cpp:33]   --->   Operation 36 'add' 'p_Val2_8_3' <Predicate = (!exitcond1)> <Delay = 2.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 37 [1/1] (0.00ns)   --->   "store i46 %p_Val2_8_3, i46* @inte_V_3, align 8" [cic.cpp:34]   --->   Operation 37 'store' <Predicate = (!exitcond1)> <Delay = 0.00>
+ST_4 : Operation 38 [1/1] (0.00ns)   --->   "%inte_V_4_load = load i46* @inte_V_4, align 16" [cic.cpp:33]   --->   Operation 38 'load' 'inte_V_4_load' <Predicate = (!exitcond1)> <Delay = 0.00>
+ST_4 : Operation 39 [1/1] (2.54ns)   --->   "%p_Val2_8_4 = add i46 %inte_V_4_load, %p_Val2_8_3" [cic.cpp:33]   --->   Operation 39 'add' 'p_Val2_8_4' <Predicate = (!exitcond1)> <Delay = 2.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 40 [1/1] (0.00ns)   --->   "store i46 %p_Val2_8_4, i46* @inte_V_4, align 16" [cic.cpp:34]   --->   Operation 40 'store' <Predicate = (!exitcond1)> <Delay = 0.00>
+ST_4 : Operation 41 [1/1] (0.00ns)   --->   "%empty_2 = call i32 (...)* @_ssdm_op_SpecRegionEnd([3 x i8]* @p_str4, i32 %tmp)" [cic.cpp:37]   --->   Operation 41 'specregionend' 'empty_2' <Predicate = (!exitcond1)> <Delay = 0.00>
+ST_4 : Operation 42 [1/1] (0.00ns)   --->   "br label %0" [cic.cpp:23]   --->   Operation 42 'br' <Predicate = (!exitcond1)> <Delay = 0.00>
+
+State 5 <SV = 2> <Delay = 5.09>
+ST_5 : Operation 43 [1/1] (0.00ns)   --->   "%deriv_V_0_load = load i46* @deriv_V_0, align 16" [cic.cpp:42]   --->   Operation 43 'load' 'deriv_V_0_load' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 44 [1/1] (0.00ns)   --->   "store i46 %agg_result_V, i46* @deriv_V_0, align 16" [cic.cpp:43]   --->   Operation 44 'store' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 45 [1/1] (2.54ns)   --->   "%p_Val2_2 = sub i46 %agg_result_V, %deriv_V_0_load" [cic.cpp:44]   --->   Operation 45 'sub' 'p_Val2_2' <Predicate = true> <Delay = 2.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 46 [1/1] (0.00ns)   --->   "%deriv_V_1_load = load i46* @deriv_V_1, align 8" [cic.cpp:42]   --->   Operation 46 'load' 'deriv_V_1_load' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 47 [1/1] (0.00ns)   --->   "store i46 %p_Val2_2, i46* @deriv_V_1, align 8" [cic.cpp:43]   --->   Operation 47 'store' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 48 [1/1] (2.54ns)   --->   "%p_Val2_2_1 = sub i46 %p_Val2_2, %deriv_V_1_load" [cic.cpp:44]   --->   Operation 48 'sub' 'p_Val2_2_1' <Predicate = true> <Delay = 2.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 3> <Delay = 7.64>
+ST_6 : Operation 49 [1/1] (0.00ns)   --->   "%deriv_V_2_load = load i46* @deriv_V_2, align 16" [cic.cpp:42]   --->   Operation 49 'load' 'deriv_V_2_load' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 50 [1/1] (0.00ns)   --->   "store i46 %p_Val2_2_1, i46* @deriv_V_2, align 16" [cic.cpp:43]   --->   Operation 50 'store' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 51 [1/1] (2.54ns)   --->   "%p_Val2_2_2 = sub i46 %p_Val2_2_1, %deriv_V_2_load" [cic.cpp:44]   --->   Operation 51 'sub' 'p_Val2_2_2' <Predicate = true> <Delay = 2.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 52 [1/1] (0.00ns)   --->   "%deriv_V_3_load = load i46* @deriv_V_3, align 8" [cic.cpp:42]   --->   Operation 52 'load' 'deriv_V_3_load' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 53 [1/1] (0.00ns)   --->   "store i46 %p_Val2_2_2, i46* @deriv_V_3, align 8" [cic.cpp:43]   --->   Operation 53 'store' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 54 [1/1] (2.54ns)   --->   "%p_Val2_2_3 = sub i46 %p_Val2_2_2, %deriv_V_3_load" [cic.cpp:44]   --->   Operation 54 'sub' 'p_Val2_2_3' <Predicate = true> <Delay = 2.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 55 [1/1] (0.00ns)   --->   "%deriv_V_4_load = load i46* @deriv_V_4, align 16" [cic.cpp:42]   --->   Operation 55 'load' 'deriv_V_4_load' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 56 [1/1] (0.00ns)   --->   "store i46 %p_Val2_2_3, i46* @deriv_V_4, align 16" [cic.cpp:43]   --->   Operation 56 'store' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 57 [1/1] (2.54ns)   --->   "%p_Val2_2_4 = sub i46 %p_Val2_2_3, %deriv_V_4_load" [cic.cpp:44]   --->   Operation 57 'sub' 'p_Val2_2_4' <Predicate = true> <Delay = 2.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 58 [1/1] (0.00ns)   --->   "ret i46 %p_Val2_2_4" [cic.cpp:48]   --->   Operation 58 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.35ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('agg_result_V', cic.cpp:33) with incoming values : ('p_Val2_8_4', cic.cpp:33) [20]  (1.35 ns)
+
+ <State 2>: 2.04ns
+The critical path consists of the following:
+	'icmp' operation ('exitcond1', cic.cpp:23) [22]  (1.24 ns)
+	blocking operation 0.8 ns on control path)
+
+ <State 3>: 5.1ns
+The critical path consists of the following:
+	'load' operation ('inte_V_0_load', cic.cpp:29) on static variable 'inte_V_0' [30]  (0 ns)
+	'add' operation ('p_Val2_5', cic.cpp:29) [33]  (2.55 ns)
+	'add' operation ('p_Val2_8_1', cic.cpp:33) [36]  (2.55 ns)
+	'store' operation (cic.cpp:34) of variable 'p_Val2_8_1', cic.cpp:33 on static variable 'inte_V_1' [37]  (0 ns)
+
+ <State 4>: 7.64ns
+The critical path consists of the following:
+	'load' operation ('inte_V_2_load', cic.cpp:33) on static variable 'inte_V_2' [38]  (0 ns)
+	'add' operation ('p_Val2_8_2', cic.cpp:33) [39]  (2.55 ns)
+	'add' operation ('p_Val2_8_3', cic.cpp:33) [42]  (2.55 ns)
+	'add' operation ('p_Val2_8_4', cic.cpp:33) [45]  (2.55 ns)
+
+ <State 5>: 5.1ns
+The critical path consists of the following:
+	'load' operation ('deriv_V_0_load', cic.cpp:42) on static variable 'deriv_V_0' [50]  (0 ns)
+	'sub' operation ('p_Val2_2', cic.cpp:44) [52]  (2.55 ns)
+	'sub' operation ('p_Val2_2_1', cic.cpp:44) [55]  (2.55 ns)
+
+ <State 6>: 7.64ns
+The critical path consists of the following:
+	'load' operation ('deriv_V_2_load', cic.cpp:42) on static variable 'deriv_V_2' [56]  (0 ns)
+	'sub' operation ('p_Val2_2_2', cic.cpp:44) [58]  (2.55 ns)
+	'sub' operation ('p_Val2_2_3', cic.cpp:44) [61]  (2.55 ns)
+	'sub' operation ('p_Val2_2_4', cic.cpp:44) [64]  (2.55 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

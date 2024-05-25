@@ -1,0 +1,17 @@
+<annotationInfo>
+<annotationInfo>
+<item  id="22" filename="cic.cpp" linenumber="23" name="exitcond1" contextFuncName="cic" moduleName="cic" rtlName="exitcond1_fu_97_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="11" fileDirectory="C:\Users\raula\Desktop\Sistemas_digitales\TRABAJO"><\/item>
+<item  id="24" filename="cic.cpp" linenumber="23" name="di_1" contextFuncName="cic" moduleName="cic" rtlName="di_1_fu_103_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="15" fileDirectory="C:\Users\raula\Desktop\Sistemas_digitales\TRABAJO"><\/item>
+<item  id="32" filename="cic.cpp" linenumber="29" name="tmp_8" contextFuncName="cic" moduleName="cic" rtlName="tmp_8_fu_113_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\raula\Desktop\Sistemas_digitales\TRABAJO"><\/item>
+<item  id="33" filename="cic.cpp" linenumber="29" name="p_Val2_5" contextFuncName="cic" moduleName="cic" rtlName="p_Val2_5_fu_117_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="53" fileDirectory="C:\Users\raula\Desktop\Sistemas_digitales\TRABAJO"><\/item>
+<item  id="36" filename="cic.cpp" linenumber="33" name="p_Val2_8_1" contextFuncName="cic" moduleName="cic" rtlName="p_Val2_8_1_fu_133_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="53" fileDirectory="C:\Users\raula\Desktop\Sistemas_digitales\TRABAJO"><\/item>
+<item  id="39" filename="cic.cpp" linenumber="33" name="p_Val2_8_2" contextFuncName="cic" moduleName="cic" rtlName="p_Val2_8_2_fu_149_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="53" fileDirectory="C:\Users\raula\Desktop\Sistemas_digitales\TRABAJO"><\/item>
+<item  id="42" filename="cic.cpp" linenumber="33" name="p_Val2_8_3" contextFuncName="cic" moduleName="cic" rtlName="p_Val2_8_3_fu_164_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="53" fileDirectory="C:\Users\raula\Desktop\Sistemas_digitales\TRABAJO"><\/item>
+<item  id="45" filename="cic.cpp" linenumber="33" name="p_Val2_8_4" contextFuncName="cic" moduleName="cic" rtlName="p_Val2_8_4_fu_180_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="53" fileDirectory="C:\Users\raula\Desktop\Sistemas_digitales\TRABAJO"><\/item>
+<item  id="52" filename="cic.cpp" linenumber="44" name="p_Val2_2" contextFuncName="cic" moduleName="cic" rtlName="p_Val2_2_fu_202_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="53" fileDirectory="C:\Users\raula\Desktop\Sistemas_digitales\TRABAJO"><\/item>
+<item  id="55" filename="cic.cpp" linenumber="44" name="p_Val2_2_1" contextFuncName="cic" moduleName="cic" rtlName="p_Val2_2_1_fu_218_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="53" fileDirectory="C:\Users\raula\Desktop\Sistemas_digitales\TRABAJO"><\/item>
+<item  id="58" filename="cic.cpp" linenumber="44" name="p_Val2_2_2" contextFuncName="cic" moduleName="cic" rtlName="p_Val2_2_2_fu_233_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="53" fileDirectory="C:\Users\raula\Desktop\Sistemas_digitales\TRABAJO"><\/item>
+<item  id="61" filename="cic.cpp" linenumber="44" name="p_Val2_2_3" contextFuncName="cic" moduleName="cic" rtlName="p_Val2_2_3_fu_248_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="53" fileDirectory="C:\Users\raula\Desktop\Sistemas_digitales\TRABAJO"><\/item>
+<item  id="64" filename="cic.cpp" linenumber="44" name="p_Val2_2_4" contextFuncName="cic" moduleName="cic" rtlName="ap_return" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="53" fileDirectory="C:\Users\raula\Desktop\Sistemas_digitales\TRABAJO"><\/item>
+<\/annotationInfo>
+</annotationInfo>

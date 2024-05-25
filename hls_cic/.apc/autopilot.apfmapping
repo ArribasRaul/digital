@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="cic.cpp" path="C:\Users\raula\Desktop\Sistemas_digitales\TRABAJO\cic.cpp"/>
+    <originFiles name="coefCFIR.h" path="C:\Users\raula\Desktop\Sistemas_digitales\TRABAJO\coefCFIR.h"/>
+    <originFiles name="coefPFIR.h" path="C:\Users\raula\Desktop\Sistemas_digitales\TRABAJO\coefPFIR.h"/>
+    <originFiles name="filtro.h" path="C:\Users\raula\Desktop\Sistemas_digitales\TRABAJO\filtro.h"/>
+    <originFiles name="fir.h" path="C:\Users\raula\Desktop\Sistemas_digitales\TRABAJO\fir.h"/>
+    <originFiles name="fir_simple.cpp" path="C:\Users\raula\Desktop\Sistemas_digitales\TRABAJO\fir_simple.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="cic_input.txt" path="C:\Users\raula\Desktop\Sistemas_digitales\TRABAJO\cic_input.txt"/>
+    <originFiles name="test.cpp" path="C:\Users\raula\Desktop\Sistemas_digitales\TRABAJO\test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
