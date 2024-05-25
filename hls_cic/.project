@@ -29,72 +29,82 @@
 		<link>
 			<name>source</name>
 			<type>2</type>
-			<location>C:/Users/raula/Desktop/Sistemas_digitales/TRABAJO/hls_cic/.apc/.src</location>
+			<location>E:/FPGA/TRABAJO/hls_cic/.apc/.src</location>
 		</link>
 		<link>
 			<name>testbench</name>
 			<type>2</type>
-			<location>C:/Users/raula/Desktop/Sistemas_digitales/TRABAJO/hls_cic/.apc/.tb</location>
+			<location>E:/FPGA/TRABAJO/hls_cic/.apc/.tb</location>
+		</link>
+		<link>
+			<name>.reference/ap_int.h</name>
+			<type>1</type>
+			<location>D:/Programas/Xilinx/Vivado/2018.2/include/ap_int.h</location>
+		</link>
+		<link>
+			<name>.reference/ap_int_special.h</name>
+			<type>1</type>
+			<location>D:/Programas/Xilinx/Vivado/2018.2/include/ap_int_special.h</location>
 		</link>
 		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
-			<location>C:/Users/raula/Desktop/Sistemas_digitales/TRABAJO/hls_cic/solution1/.tcls</location>
+			<location>E:/FPGA/TRABAJO/hls_cic/solution1/.tcls</location>
 		</link>
 		<link>
 			<name>source/cic.cpp</name>
 			<type>1</type>
-			<location>C:/Users/raula/Desktop/Sistemas_digitales/TRABAJO/cic.cpp</location>
+			<location>E:/FPGA/TRABAJO/cic.cpp</location>
 		</link>
 		<link>
 			<name>source/coefCFIR.h</name>
 			<type>1</type>
-			<location>C:/Users/raula/Desktop/Sistemas_digitales/TRABAJO/coefCFIR.h</location>
+			<location>E:/FPGA/TRABAJO/coefCFIR.h</location>
 		</link>
 		<link>
 			<name>source/coefPFIR.h</name>
 			<type>1</type>
-			<location>C:/Users/raula/Desktop/Sistemas_digitales/TRABAJO/coefPFIR.h</location>
+			<location>E:/FPGA/TRABAJO/coefPFIR.h</location>
 		</link>
 		<link>
 			<name>source/filtro.h</name>
 			<type>1</type>
-			<location>C:/Users/raula/Desktop/Sistemas_digitales/TRABAJO/filtro.h</location>
+			<location>E:/FPGA/TRABAJO/filtro.h</location>
 		</link>
 		<link>
 			<name>source/fir.h</name>
 			<type>1</type>
-			<location>C:/Users/raula/Desktop/Sistemas_digitales/TRABAJO/fir.h</location>
+			<location>E:/FPGA/TRABAJO/fir.h</location>
 		</link>
 		<link>
 			<name>source/fir_simple.cpp</name>
 			<type>1</type>
-			<location>C:/Users/raula/Desktop/Sistemas_digitales/TRABAJO/fir_simple.cpp</location>
+			<location>E:/FPGA/TRABAJO/fir_simple.cpp</location>
 		</link>
 		<link>
 			<name>testbench/cic_input.txt</name>
 			<type>1</type>
-			<location>C:/Users/raula/Desktop/Sistemas_digitales/TRABAJO/cic_input.txt</location>
+			<location>E:/FPGA/TRABAJO/cic_input.txt</location>
 		</link>
 		<link>
 			<name>testbench/test.cpp</name>
 			<type>1</type>
-			<location>C:/Users/raula/Desktop/Sistemas_digitales/TRABAJO/test.cpp</location>
+			<location>E:/FPGA/TRABAJO/test.cpp</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>C:/Users/raula/Desktop/Sistemas_digitales/TRABAJO/hls_cic/solution1/solution1.directive</location>
+			<location>E:/FPGA/TRABAJO/hls_cic/solution1/solution1.directive</location>
 		</link>
 		<link>
 			<name>solution1/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>C:/Users/raula/Desktop/Sistemas_digitales/TRABAJO/hls_cic/solution1/directives.tcl</location>
+			<location>E:/FPGA/TRABAJO/hls_cic/solution1/directives.tcl</location>
 		</link>
 		<link>
 			<name>solution1/constraints/script.tcl</name>
 			<type>1</type>
-			<location>C:/Users/raula/Desktop/Sistemas_digitales/TRABAJO/hls_cic/solution1/script.tcl</location>
+			<location>E:/FPGA/TRABAJO/hls_cic/solution1/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

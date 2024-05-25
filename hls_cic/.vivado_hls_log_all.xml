@@ -6,24 +6,22 @@
       <simLog/>
       <mgLog/>
       <packageLog/>
-      <csimLog>
-        <logs message="ERROR: [SIM 211-100] CSim file generation failed: compilation error(s)." projectName="hls_cic" solutionName="solution1" date="2024-05-25T11:05:16.802+0200"/>
-      </csimLog>
+      <csimLog/>
     </logs>
   </errorLogs>
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="WARNING: [RTGEN 206-101] Register 'deriv_V_4' is power-on initialization." projectName="hls_cic" solutionName="solution1" date="2024-05-25T11:04:21.468+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'deriv_V_3' is power-on initialization." projectName="hls_cic" solutionName="solution1" date="2024-05-25T11:04:21.434+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'deriv_V_2' is power-on initialization." projectName="hls_cic" solutionName="solution1" date="2024-05-25T11:04:21.401+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'deriv_V_1' is power-on initialization." projectName="hls_cic" solutionName="solution1" date="2024-05-25T11:04:21.370+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'deriv_V_0' is power-on initialization." projectName="hls_cic" solutionName="solution1" date="2024-05-25T11:04:21.344+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'inte_V_4' is power-on initialization." projectName="hls_cic" solutionName="solution1" date="2024-05-25T11:04:21.313+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'inte_V_3' is power-on initialization." projectName="hls_cic" solutionName="solution1" date="2024-05-25T11:04:21.280+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'inte_V_2' is power-on initialization." projectName="hls_cic" solutionName="solution1" date="2024-05-25T11:04:21.253+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'inte_V_1' is power-on initialization." projectName="hls_cic" solutionName="solution1" date="2024-05-25T11:04:21.228+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'inte_V_0' is power-on initialization." projectName="hls_cic" solutionName="solution1" date="2024-05-25T11:04:21.197+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'deriv_V_4' is power-on initialization." projectName="hls_cic" solutionName="solution1" date="2024-05-25T11:35:27.907+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'deriv_V_3' is power-on initialization." projectName="hls_cic" solutionName="solution1" date="2024-05-25T11:35:27.895+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'deriv_V_2' is power-on initialization." projectName="hls_cic" solutionName="solution1" date="2024-05-25T11:35:27.884+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'deriv_V_1' is power-on initialization." projectName="hls_cic" solutionName="solution1" date="2024-05-25T11:35:27.870+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'deriv_V_0' is power-on initialization." projectName="hls_cic" solutionName="solution1" date="2024-05-25T11:35:27.858+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'inte_V_4' is power-on initialization." projectName="hls_cic" solutionName="solution1" date="2024-05-25T11:35:27.844+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'inte_V_3' is power-on initialization." projectName="hls_cic" solutionName="solution1" date="2024-05-25T11:35:27.824+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'inte_V_2' is power-on initialization." projectName="hls_cic" solutionName="solution1" date="2024-05-25T11:35:27.811+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'inte_V_1' is power-on initialization." projectName="hls_cic" solutionName="solution1" date="2024-05-25T11:35:27.799+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'inte_V_0' is power-on initialization." projectName="hls_cic" solutionName="solution1" date="2024-05-25T11:35:27.783+0200" type="Warning"/>
       </synLog>
       <simLog/>
       <mgLog/>

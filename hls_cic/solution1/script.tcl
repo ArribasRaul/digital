@@ -5,14 +5,14 @@
 ############################################################
 open_project hls_cic
 set_top cic
-add_files cic.cpp
-add_files coefCFIR.h
-add_files coefPFIR.h
-add_files filtro.h
-add_files fir.h
 add_files fir_simple.cpp
-add_files -tb cic_input.txt -cflags "-Wno-unknown-pragmas"
-add_files -tb test.cpp -cflags "-Wno-unknown-pragmas"
+add_files fir.h
+add_files filtro.h
+add_files coefPFIR.h
+add_files coefCFIR.h
+add_files cic.cpp
+add_files -tb test.cpp
+add_files -tb cic_input.txt
 open_solution "solution1"
 set_part {xc7a200tfbg676-2}
 create_clock -period 10 -name default

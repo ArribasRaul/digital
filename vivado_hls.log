@@ -1,88 +1,53 @@
 INFO: Applying HLS Y2K22 patch v1.2 for IP revision
-INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/vivado_hls.exe'
-INFO: [HLS 200-10] For user 'raula' on host 'raul' (Windows NT_amd64 version 6.2) on Sat May 25 11:05:01 +0200 2024
-INFO: [HLS 200-10] In directory 'C:/Users/raula/Desktop/Sistemas_digitales/TRABAJO'
-INFO: [HLS 200-10] Opening project 'C:/Users/raula/Desktop/Sistemas_digitales/TRABAJO/hls_cic'.
-INFO: [HLS 200-10] Opening solution 'C:/Users/raula/Desktop/Sistemas_digitales/TRABAJO/hls_cic/solution1'.
+INFO: [HLS 200-10] Running 'D:/Programas/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'Chesus' on host 'chesus-pc' (Windows NT_amd64 version 6.2) on Sat May 25 11:35:40 +0200 2024
+INFO: [HLS 200-10] In directory 'E:/FPGA/TRABAJO'
+INFO: [HLS 200-10] Opening project 'E:/FPGA/TRABAJO/hls_cic'.
+INFO: [HLS 200-10] Opening solution 'E:/FPGA/TRABAJO/hls_cic/solution1'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-10] Setting target device to 'xc7a200tfbg676-2'
 INFO: [SIM 211-2] *************** CSIM start ***************
 INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-   Compiling ../../../../test.cpp in debug mode
-   Compiling ../../../../cic.cpp in debug mode
    Compiling ../../../../fir_simple.cpp in debug mode
+   Compiling ../../../../cic.cpp in debug mode
    Generating csim.exe
-Makefile.rules:399: recipe for target 'csim.exe' failed
-In file included from C:/Xilinx/Vivado/2018.2/include/floating_point_v7_0_bitacc_cmodel.h:143:0,
-                 from C:/Xilinx/Vivado/2018.2/include/hls_fpo.h:166,
-                 from C:/Xilinx/Vivado/2018.2/include/hls_half.h:58,
-                 from C:/Xilinx/Vivado/2018.2/include/ap_int_sim.h:73,
-                 from C:/Xilinx/Vivado/2018.2/include/ap_int.h:65,
+In file included from D:/Programas/Xilinx/Vivado/2018.2/include/floating_point_v7_0_bitacc_cmodel.h:143:0,
+                 from D:/Programas/Xilinx/Vivado/2018.2/include/hls_fpo.h:166,
+                 from D:/Programas/Xilinx/Vivado/2018.2/include/hls_half.h:58,
+                 from D:/Programas/Xilinx/Vivado/2018.2/include/ap_int_sim.h:73,
+                 from D:/Programas/Xilinx/Vivado/2018.2/include/ap_int.h:65,
                  from ../../../../filtro.h:1,
-                 from ../../../../test.cpp:4:
-C:/Xilinx/Vivado/2018.2/include/gmp.h:62:0: warning: "__GMP_LIBGMP_DLL" redefined
- #define __GMP_LIBGMP_DLL  0
- 
-In file included from C:/Xilinx/Vivado/2018.2/include/hls_fpo.h:166:0,
-                 from C:/Xilinx/Vivado/2018.2/include/hls_half.h:58,
-                 from C:/Xilinx/Vivado/2018.2/include/ap_int_sim.h:73,
-                 from C:/Xilinx/Vivado/2018.2/include/ap_int.h:65,
-                 from ../../../../filtro.h:1,
-                 from ../../../../test.cpp:4:
-C:/Xilinx/Vivado/2018.2/include/floating_point_v7_0_bitacc_cmodel.h:135:0: note: this is the location of the previous definition
- #define __GMP_LIBGMP_DLL 1
- 
-In file included from C:/Xilinx/Vivado/2018.2/include/floating_point_v7_0_bitacc_cmodel.h:143:0,
-                 from C:/Xilinx/Vivado/2018.2/include/hls_fpo.h:166,
-                 from C:/Xilinx/Vivado/2018.2/include/hls_half.h:58,
-                 from C:/Xilinx/Vivado/2018.2/include/ap_int_sim.h:73,
-                 from C:/Xilinx/Vivado/2018.2/include/ap_int.h:65,
-                 from ../../../../cic.cpp:2:
-C:/Xilinx/Vivado/2018.2/include/gmp.h:62:0: warning: "__GMP_LIBGMP_DLL" redefined
- #define __GMP_LIBGMP_DLL  0
- 
-In file included from C:/Xilinx/Vivado/2018.2/include/hls_fpo.h:166:0,
-                 from C:/Xilinx/Vivado/2018.2/include/hls_half.h:58,
-                 from C:/Xilinx/Vivado/2018.2/include/ap_int_sim.h:73,
-                 from C:/Xilinx/Vivado/2018.2/include/ap_int.h:65,
-                 from ../../../../cic.cpp:2:
-C:/Xilinx/Vivado/2018.2/include/floating_point_v7_0_bitacc_cmodel.h:135:0: note: this is the location of the previous definition
- #define __GMP_LIBGMP_DLL 1
- 
-In file included from C:/Xilinx/Vivado/2018.2/include/floating_point_v7_0_bitacc_cmodel.h:143:0,
-                 from C:/Xilinx/Vivado/2018.2/include/hls_fpo.h:166,
-                 from C:/Xilinx/Vivado/2018.2/include/hls_half.h:58,
-                 from C:/Xilinx/Vivado/2018.2/include/ap_int_sim.h:73,
-                 from C:/Xilinx/Vivado/2018.2/include/ap_int.h:65,
                  from ../../../../fir.h:1,
                  from ../../../../fir_simple.cpp:1:
-C:/Xilinx/Vivado/2018.2/include/gmp.h:62:0: warning: "__GMP_LIBGMP_DLL" redefined
+D:/Programas/Xilinx/Vivado/2018.2/include/gmp.h:62:0: warning: "__GMP_LIBGMP_DLL" redefined
  #define __GMP_LIBGMP_DLL  0
  
-In file included from C:/Xilinx/Vivado/2018.2/include/hls_fpo.h:166:0,
-                 from C:/Xilinx/Vivado/2018.2/include/hls_half.h:58,
-                 from C:/Xilinx/Vivado/2018.2/include/ap_int_sim.h:73,
-                 from C:/Xilinx/Vivado/2018.2/include/ap_int.h:65,
+In file included from D:/Programas/Xilinx/Vivado/2018.2/include/hls_fpo.h:166:0,
+                 from D:/Programas/Xilinx/Vivado/2018.2/include/hls_half.h:58,
+                 from D:/Programas/Xilinx/Vivado/2018.2/include/ap_int_sim.h:73,
+                 from D:/Programas/Xilinx/Vivado/2018.2/include/ap_int.h:65,
+                 from ../../../../filtro.h:1,
                  from ../../../../fir.h:1,
                  from ../../../../fir_simple.cpp:1:
-C:/Xilinx/Vivado/2018.2/include/floating_point_v7_0_bitacc_cmodel.h:135:0: note: this is the location of the previous definition
+D:/Programas/Xilinx/Vivado/2018.2/include/floating_point_v7_0_bitacc_cmodel.h:135:0: note: this is the location of the previous definition
  #define __GMP_LIBGMP_DLL 1
  
-obj/cic.o: In function `sistema(ap_fixed<16, 2, (ap_q_mode)5, (ap_o_mode)3, 0>*)':
-C:\Users\raula\Desktop\Sistemas_digitales\TRABAJO\hls_cic\solution1\csim\build/../../../../cic.cpp:68: undefined reference to `void FIR<ap_fixed<24, -1, (ap_q_mode)5, (ap_o_mode)3, 0> const [21], 21>(ap_fixed<16, 2, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 2, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<24, -1, (ap_q_mode)5, (ap_o_mode)3, 0> const [21])'
-C:\Users\raula\Desktop\Sistemas_digitales\TRABAJO\hls_cic\solution1\csim\build/../../../../cic.cpp:75: undefined reference to `void FIR<ap_fixed<24, -1, (ap_q_mode)5, (ap_o_mode)3, 0> const [63], 63>(ap_fixed<16, 2, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 2, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<24, -1, (ap_q_mode)5, (ap_o_mode)3, 0> const [63])'
-collect2.exe: error: ld returned 1 exit status
-make: *** [csim.exe] Error 1
-ERROR: [SIM 211-100] CSim file generation failed: compilation error(s).
+In file included from D:/Programas/Xilinx/Vivado/2018.2/include/floating_point_v7_0_bitacc_cmodel.h:143:0,
+                 from D:/Programas/Xilinx/Vivado/2018.2/include/hls_fpo.h:166,
+                 from D:/Programas/Xilinx/Vivado/2018.2/include/hls_half.h:58,
+                 from D:/Programas/Xilinx/Vivado/2018.2/include/ap_int_sim.h:73,
+                 from D:/Programas/Xilinx/Vivado/2018.2/include/ap_int.h:65,
+                 from ../../../../cic.cpp:2:
+D:/Programas/Xilinx/Vivado/2018.2/include/gmp.h:62:0: warning: "__GMP_LIBGMP_DLL" redefined
+ #define __GMP_LIBGMP_DLL  0
+ 
+In file included from D:/Programas/Xilinx/Vivado/2018.2/include/hls_fpo.h:166:0,
+                 from D:/Programas/Xilinx/Vivado/2018.2/include/hls_half.h:58,
+                 from D:/Programas/Xilinx/Vivado/2018.2/include/ap_int_sim.h:73,
+                 from D:/Programas/Xilinx/Vivado/2018.2/include/ap_int.h:65,
+                 from ../../../../cic.cpp:2:
+D:/Programas/Xilinx/Vivado/2018.2/include/floating_point_v7_0_bitacc_cmodel.h:135:0: note: this is the location of the previous definition
+ #define __GMP_LIBGMP_DLL 1
+ 
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
 INFO: [SIM 211-3] *************** CSIM finish ***************
-5
-    while executing
-"source C:/Users/raula/Desktop/Sistemas_digitales/TRABAJO/hls_cic/solution1/csim.tcl"
-    invoked from within
-"hls::main C:/Users/raula/Desktop/Sistemas_digitales/TRABAJO/hls_cic/solution1/csim.tcl"
-    ("uplevel" body line 1)
-    invoked from within
-"uplevel 1 hls::main {*}$args"
-    (procedure "hls_proc" line 5)
-    invoked from within
-"hls_proc $argv"

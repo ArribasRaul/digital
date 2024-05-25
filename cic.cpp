@@ -56,25 +56,30 @@ adc_t  sistema(adc_t ENTRADA[D]){
 
 	salida_cic = salida_cic / 2^30;
 
+
 	adc_t salida_fir_1;
 	adc_t salida_fir_2;
 	adc_t salida_cic_adc_t = salida_cic;
 
-	const ap_fixed<24,-1> coeff_1[21]={
+	ap_fixed<24,-1> coeff_1[21]={
 #include "coefCFIR.h"
 	};
 #pragma HLS RESOURCE variable=coeff_1 core=ROM_2P_BRAM
 
-	FIR<const ap_fixed<24,-1>[21], 21>(salida_cic_adc_t, &salida_fir_1, coeff_1);
+	//FIR<21>(salida_cic_adc_t, &salida_fir_1, coeff_1);
 
-	const ap_fixed<24,-1> coeff_2[63]={
+	FIR_21(salida_cic_adc_t, &salida_fir_1, coeff_1);
+
+	ap_fixed<24,-1> coeff_2[63]={
 #include "coefPFIR.h"
 	};
 #pragma HLS RESOURCE variable=coeff_1 core=ROM_2P_BRAM
 
-	FIR<const ap_fixed<24,-1>[63], 63>(salida_fir_1, &salida_fir_2, coeff_2);
+	//FIR<63>(salida_fir_1, &salida_fir_2, coeff_2);
 
+	FIR_63(salida_fir_1, &salida_fir_2, coeff_2);
 
 	adc_t salida = salida_fir_2 * salida_fir_2;
+
 	return salida;
 }

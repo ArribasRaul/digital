@@ -23,18 +23,18 @@ __SIM_DDS__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../../test.cpp ../../../../cic.cpp ../../../../fir_simple.cpp
+HLS_SOURCES = ../../../../test.cpp ../../../../fir_simple.cpp ../../../../cic.cpp
 
 TARGET := csim.exe
 
-AUTOPILOT_ROOT := C:/Xilinx/Vivado/2018.2
+AUTOPILOT_ROOT := D:/Programas/Xilinx/Vivado/2018.2
 AUTOPILOT_MACH := win64
 ifdef AP_GCC_M32
   AUTOPILOT_MACH := Linux_x86
   IFLAG += -m32
 endif
 ifndef AP_GCC_PATH
-  AP_GCC_PATH := C:/Xilinx/Vivado/2018.2/msys64/mingw64/bin
+  AP_GCC_PATH := D:/Programas/Xilinx/Vivado/2018.2/msys64/mingw64/bin
 endif
 AUTOPILOT_TOOL := ${AUTOPILOT_ROOT}/${AUTOPILOT_MACH}/tools
 AP_CLANG_PATH := ${AUTOPILOT_ROOT}/msys64/mingw64/bin
@@ -62,7 +62,6 @@ IFLAG += -D__SIM_FIR__
 IFLAG += -D__SIM_DDS__
 
 IFLAG += -D__DSP48E1__
-IFLAG += -Wno-unknown-pragmas 
 IFLAG += -g
 IFLAG += -DNT
 LFLAG += -Wl,--enable-auto-import 
@@ -80,18 +79,18 @@ all: $(TARGET)
 
 $(ObjDir)/test.o: ../../../../test.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../../test.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/test.d
-
-$(ObjDir)/cic.o: ../../../../cic.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../cic.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
--include $(ObjDir)/cic.d
+-include $(ObjDir)/test.d
 
 $(ObjDir)/fir_simple.o: ../../../../fir_simple.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../../fir_simple.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/fir_simple.d
+
+$(ObjDir)/cic.o: ../../../../cic.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../cic.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/cic.d

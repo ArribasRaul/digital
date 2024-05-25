@@ -1,13 +1,6 @@
-#include "ap_int.h"
 #include "filtro.h"
 
-#include "ap_fixed.h"
+template <const int max_size> void FIR (adc_t ENTRADA, adc_t *SALIDA, ap_fixed<24,-1>* coeff);
 
-
-
-//typedef ap_fixed<14,2> adc_t ;
-
-//typedef float adc_t ;
-
-
-template <typename T, const int max_size> void FIR (adc_t ENTRADA, adc_t *SALIDA, T coeff);
+void FIR_63 (adc_t ENTRADA, adc_t *SALIDA, ap_fixed<24,-1>* coeff);
+void FIR_21 (adc_t ENTRADA, adc_t *SALIDA, ap_fixed<24,-1>* coeff);
