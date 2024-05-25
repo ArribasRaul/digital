@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="fir_simple.cpp" path="E:\FPGA\TRABAJO\fir_simple.cpp"/>
-    <originFiles name="fir.h" path="E:\FPGA\TRABAJO\fir.h"/>
-    <originFiles name="filtro.h" path="E:\FPGA\TRABAJO\filtro.h"/>
-    <originFiles name="coefPFIR.h" path="E:\FPGA\TRABAJO\coefPFIR.h"/>
-    <originFiles name="coefCFIR.h" path="E:\FPGA\TRABAJO\coefCFIR.h"/>
-    <originFiles name="cic.cpp" path="E:\FPGA\TRABAJO\cic.cpp"/>
+    <originFiles name="fir_simple.cpp" path="C:\Users\raula\Documents\GitHub\digital\fir_simple.cpp"/>
+    <originFiles name="fir.h" path="C:\Users\raula\Documents\GitHub\digital\fir.h"/>
+    <originFiles name="filtro.h" path="C:\Users\raula\Documents\GitHub\digital\filtro.h"/>
+    <originFiles name="coefPFIR.h" path="C:\Users\raula\Documents\GitHub\digital\coefPFIR.h"/>
+    <originFiles name="coefCFIR.h" path="C:\Users\raula\Documents\GitHub\digital\coefCFIR.h"/>
+    <originFiles name="cic.cpp" path="C:\Users\raula\Documents\GitHub\digital\cic.cpp"/>
   </source>
   <testbench>
-    <originFiles name="test.cpp" path="E:\FPGA\TRABAJO\test.cpp"/>
-    <originFiles name="cic_input.txt" path="E:\FPGA\TRABAJO\cic_input.txt"/>
+    <originFiles name="test.cpp" path="C:\Users\raula\Documents\GitHub\digital\test.cpp"/>
+    <originFiles name="cic_input.txt" path="C:\Users\raula\Documents\GitHub\digital\cic_input.txt"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

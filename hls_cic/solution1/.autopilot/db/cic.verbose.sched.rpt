@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'cic'
 ================================================================
-* Date:           Sat May 25 11:35:27 2024
+* Date:           Sat May 25 12:12:26 2024
 
 * Version:        2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)
 * Project:        hls_cic
@@ -95,8 +95,8 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 1.35>
-ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i46 0), !map !104"   --->   Operation 7 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %ENTRADA_V), !map !110"   --->   Operation 8 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i46 0), !map !106"   --->   Operation 7 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %ENTRADA_V), !map !112"   --->   Operation 8 'specbitsmap' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([4 x i8]* @cic_str) nounwind"   --->   Operation 9 'spectopmodule' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [11 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [cic.cpp:17]   --->   Operation 10 'specinterface' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [11 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1)"   --->   Operation 11 'specinterface' <Predicate = true> <Delay = 0.00>
@@ -178,7 +178,6 @@ The critical path consists of the following:
 	'load' operation ('inte_V_0_load', cic.cpp:29) on static variable 'inte_V_0' [30]  (0 ns)
 	'add' operation ('p_Val2_5', cic.cpp:29) [33]  (2.55 ns)
 	'add' operation ('p_Val2_8_1', cic.cpp:33) [36]  (2.55 ns)
-	'store' operation (cic.cpp:34) of variable 'p_Val2_8_1', cic.cpp:33 on static variable 'inte_V_1' [37]  (0 ns)
 
  <State 4>: 7.64ns
 The critical path consists of the following:

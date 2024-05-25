@@ -57,7 +57,7 @@
 
 <Node id="12" bw="0" op_0_bw="0" op_1_bw="46">
 <![CDATA[
-codeRepl:0  call void (...)* @_ssdm_op_SpecBitsMap(i46 0), !map !104
+codeRepl:0  call void (...)* @_ssdm_op_SpecBitsMap(i46 0), !map !106
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -72,7 +72,7 @@ codeRepl:0  call void (...)* @_ssdm_op_SpecBitsMap(i46 0), !map !104
 
 <Node id="13" bw="0" op_0_bw="0" op_1_bw="16">
 <![CDATA[
-codeRepl:1  call void (...)* @_ssdm_op_SpecBitsMap(i16* %ENTRADA_V), !map !110
+codeRepl:1  call void (...)* @_ssdm_op_SpecBitsMap(i16* %ENTRADA_V), !map !112
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>

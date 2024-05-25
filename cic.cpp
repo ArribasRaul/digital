@@ -55,7 +55,7 @@ adc_t  sistema(adc_t ENTRADA[D]){
 	salida_cic = cic(ENTRADA);
 
 	salida_cic = salida_cic / 2^30;
-
+	//return salida_cic;
 
 	adc_t salida_fir_1;
 	adc_t salida_fir_2;
@@ -69,6 +69,7 @@ adc_t  sistema(adc_t ENTRADA[D]){
 	//FIR<21>(salida_cic_adc_t, &salida_fir_1, coeff_1);
 
 	FIR_21(salida_cic_adc_t, &salida_fir_1, coeff_1);
+	//return salida_fir_1;
 
 	ap_fixed<24,-1> coeff_2[63]={
 #include "coefPFIR.h"
@@ -78,8 +79,12 @@ adc_t  sistema(adc_t ENTRADA[D]){
 	//FIR<63>(salida_fir_1, &salida_fir_2, coeff_2);
 
 	FIR_63(salida_fir_1, &salida_fir_2, coeff_2);
+	//return salida_fir_2;
 
 	adc_t salida = salida_fir_2 * salida_fir_2;
+	adc_t salida2 = salida + salida;
 
 	return salida;
+	return salida2;
+
 }

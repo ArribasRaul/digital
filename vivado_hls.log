@@ -1,52 +1,30 @@
 INFO: Applying HLS Y2K22 patch v1.2 for IP revision
-INFO: [HLS 200-10] Running 'D:/Programas/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/vivado_hls.exe'
-INFO: [HLS 200-10] For user 'Chesus' on host 'chesus-pc' (Windows NT_amd64 version 6.2) on Sat May 25 11:35:40 +0200 2024
-INFO: [HLS 200-10] In directory 'E:/FPGA/TRABAJO'
-INFO: [HLS 200-10] Opening project 'E:/FPGA/TRABAJO/hls_cic'.
-INFO: [HLS 200-10] Opening solution 'E:/FPGA/TRABAJO/hls_cic/solution1'.
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'raula' on host 'raul' (Windows NT_amd64 version 6.2) on Sat May 25 12:13:00 +0200 2024
+INFO: [HLS 200-10] In directory 'C:/Users/raula/Documents/GitHub/digital'
+INFO: [HLS 200-10] Opening project 'C:/Users/raula/Documents/GitHub/digital/hls_cic'.
+INFO: [HLS 200-10] Opening solution 'C:/Users/raula/Documents/GitHub/digital/hls_cic/solution1'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-10] Setting target device to 'xc7a200tfbg676-2'
 INFO: [SIM 211-2] *************** CSIM start ***************
 INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-   Compiling ../../../../fir_simple.cpp in debug mode
    Compiling ../../../../cic.cpp in debug mode
    Generating csim.exe
-In file included from D:/Programas/Xilinx/Vivado/2018.2/include/floating_point_v7_0_bitacc_cmodel.h:143:0,
-                 from D:/Programas/Xilinx/Vivado/2018.2/include/hls_fpo.h:166,
-                 from D:/Programas/Xilinx/Vivado/2018.2/include/hls_half.h:58,
-                 from D:/Programas/Xilinx/Vivado/2018.2/include/ap_int_sim.h:73,
-                 from D:/Programas/Xilinx/Vivado/2018.2/include/ap_int.h:65,
-                 from ../../../../filtro.h:1,
-                 from ../../../../fir.h:1,
-                 from ../../../../fir_simple.cpp:1:
-D:/Programas/Xilinx/Vivado/2018.2/include/gmp.h:62:0: warning: "__GMP_LIBGMP_DLL" redefined
+In file included from C:/Xilinx/Vivado/2018.2/include/floating_point_v7_0_bitacc_cmodel.h:143:0,
+                 from C:/Xilinx/Vivado/2018.2/include/hls_fpo.h:166,
+                 from C:/Xilinx/Vivado/2018.2/include/hls_half.h:58,
+                 from C:/Xilinx/Vivado/2018.2/include/ap_int_sim.h:73,
+                 from C:/Xilinx/Vivado/2018.2/include/ap_int.h:65,
+                 from ../../../../cic.cpp:2:
+C:/Xilinx/Vivado/2018.2/include/gmp.h:62:0: warning: "__GMP_LIBGMP_DLL" redefined
  #define __GMP_LIBGMP_DLL  0
  
-In file included from D:/Programas/Xilinx/Vivado/2018.2/include/hls_fpo.h:166:0,
-                 from D:/Programas/Xilinx/Vivado/2018.2/include/hls_half.h:58,
-                 from D:/Programas/Xilinx/Vivado/2018.2/include/ap_int_sim.h:73,
-                 from D:/Programas/Xilinx/Vivado/2018.2/include/ap_int.h:65,
-                 from ../../../../filtro.h:1,
-                 from ../../../../fir.h:1,
-                 from ../../../../fir_simple.cpp:1:
-D:/Programas/Xilinx/Vivado/2018.2/include/floating_point_v7_0_bitacc_cmodel.h:135:0: note: this is the location of the previous definition
- #define __GMP_LIBGMP_DLL 1
- 
-In file included from D:/Programas/Xilinx/Vivado/2018.2/include/floating_point_v7_0_bitacc_cmodel.h:143:0,
-                 from D:/Programas/Xilinx/Vivado/2018.2/include/hls_fpo.h:166,
-                 from D:/Programas/Xilinx/Vivado/2018.2/include/hls_half.h:58,
-                 from D:/Programas/Xilinx/Vivado/2018.2/include/ap_int_sim.h:73,
-                 from D:/Programas/Xilinx/Vivado/2018.2/include/ap_int.h:65,
+In file included from C:/Xilinx/Vivado/2018.2/include/hls_fpo.h:166:0,
+                 from C:/Xilinx/Vivado/2018.2/include/hls_half.h:58,
+                 from C:/Xilinx/Vivado/2018.2/include/ap_int_sim.h:73,
+                 from C:/Xilinx/Vivado/2018.2/include/ap_int.h:65,
                  from ../../../../cic.cpp:2:
-D:/Programas/Xilinx/Vivado/2018.2/include/gmp.h:62:0: warning: "__GMP_LIBGMP_DLL" redefined
- #define __GMP_LIBGMP_DLL  0
- 
-In file included from D:/Programas/Xilinx/Vivado/2018.2/include/hls_fpo.h:166:0,
-                 from D:/Programas/Xilinx/Vivado/2018.2/include/hls_half.h:58,
-                 from D:/Programas/Xilinx/Vivado/2018.2/include/ap_int_sim.h:73,
-                 from D:/Programas/Xilinx/Vivado/2018.2/include/ap_int.h:65,
-                 from ../../../../cic.cpp:2:
-D:/Programas/Xilinx/Vivado/2018.2/include/floating_point_v7_0_bitacc_cmodel.h:135:0: note: this is the location of the previous definition
+C:/Xilinx/Vivado/2018.2/include/floating_point_v7_0_bitacc_cmodel.h:135:0: note: this is the location of the previous definition
  #define __GMP_LIBGMP_DLL 1
  
 INFO: [SIM 211-1] CSim file generation done with 0 errors.

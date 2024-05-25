@@ -43,7 +43,7 @@ set SCTraceOption "all"
 set TargetInfo "xc7a200t:fbg676:-2"
 set SourceFiles {sc {} c {../../cic.cpp ../../fir_simple.cpp}}
 set SourceFlags {sc {} c {{} {}}}
-set DirectiveFile {E:/FPGA/TRABAJO/hls_cic/solution1/solution1.directive}
+set DirectiveFile {C:/Users/raula/Documents/GitHub/digital/hls_cic/solution1/solution1.directive}
 set TBFiles {verilog {../../cic_input.txt ../../test.cpp} bc {../../cic_input.txt ../../test.cpp} sc {../../cic_input.txt ../../test.cpp} vhdl {../../cic_input.txt ../../test.cpp} c {} cas {../../cic_input.txt ../../test.cpp}}
 set SpecLanguage "C"
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
